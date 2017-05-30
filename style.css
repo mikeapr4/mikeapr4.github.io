@@ -126,9 +126,11 @@ iframe {
 
 	.fp-controlArrow.fp-prev {
 		border-width: 19px 17px 19px 0;
+		opacity: 0.4;
 	}
 	.fp-controlArrow.fp-next {
 		border-width: 19px 0 19px 17px;
+		opacity: 0.4;
 	}
 }
 
