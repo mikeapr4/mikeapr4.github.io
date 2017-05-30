@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Michael Gallagher">
+
+    <title>April4th</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!-- https://una.im/CSSgram/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cssgram/0.1.10/cssgram.min.css">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.css" />
+
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+	<script src="main.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+
+<body class="index">
+
+    <!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+		<i class="fa fa-bars"></i>
+	  </button>
+	  <a class="navbar-brand hidden-sm-down" href="#home"><img id="logo" src="logo.svg"/></a>
+
+	  <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+		<ul class="navbar-nav">
+		  <li data-menuanchor="about" class="nav-item">
+			<a class="nav-link" href="#about">About</a>
+		  </li>
+		  <li data-menuanchor="process" class="nav-item">
+			<a class="nav-link" href="#process">Process</a>
+		  </li>
+		  <li data-menuanchor="tools" class="nav-item">
+			<a class="nav-link" href="#tools">Tools</a>
+		  </li>
+		  <li data-menuanchor="opinion" class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#opinion">Opinion <b class="caret"></b></a>
+			<ul class="dropdown-menu dropdown-menu-right">
+				<li data-menuanchor="triangle"><a href="#triangle">Software Quality Triangle</a></li>
+                <li data-menuanchor="reqs"><a href="#reqs">Informal or Formal Requirements?</a></li>
+				<!--li data-menuanchor="jenga"><a href="#jenga">Jenga Antipattern</a></li-->
+				<li data-menuanchor="mentoring"><a href="#mentoring">What Mentoring Means</a></li>
+                <!--li data-menuanchor="legacyjourney"><a href="#legacyjourney">Legacy Journey: Backbone to Vue</a></li-->
+			</ul>
+		  </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/mikeapr4" data-toggle="tooltip" title="Github Profile">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/mikegallaghereng" data-toggle="tooltip" title="LinkedIn Profile">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="http://stackoverflow.com/users/1084004/mikeapr4" data-toggle="tooltip" title="StackOverflow Profile">
+            <i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://prezi.com/user/e2siue8pi776/" data-toggle="tooltip" title="Prezi Presentations">
+            <i class="fa fa-pie-chart" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:more@april4th.ie" data-toggle="tooltip" data-placement="left" title="more@april4th.ie">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          </li>
+		</ul>
+	  </div>
+	</nav>
+
+<div id="fullpage">
+	<div class="section container-fluid full-screen-bg" data-anchor="home">
+        <div class="row d-flex align-items-center white-text">
+        	<div class="col-8 offset-md-1 offset-sm-4 col-sm-4">
+        		<img id="display-logo" src="logo-white.svg"/>
+        	</div>
+            <div class="col-md-6 offset-md-1 offset-sm-1 col-sm-10">
+                <h1 class="display-3">Controlling complexity is the essence of computer programming.</h1>
+                <p>- Brian Kernighan</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- inspiration
+    http://gardenestudio.com.br/index.php
+
+    circular images
+    https://bavotasan.com/2011/circular-images-with-css3/
+
+	https://blackrockdigital.github.io/startbootstrap-freelancer/
+    -->
+
+    <section data-anchor="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <h3><small>Hello. I am a </small><br/>Full-Stack Software&nbsp;Architect<br/><small>and my name is</small><br/>
+                    Michael Gallagher</h3>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="rounded-circle" src="profile.jpg"/>
+                </div>
+                <div class="col-11 offset-md-1 col-md-5">
+                    <p>For the majority of my 12 years experience, I've been leading teams and driving architecture.
+                    Modern Javascript is my passion, though Groovy and Java are tools on my belt too. My domain expertise
+                    ranges from Telecommunications to Travel, from Statistics to Maps. 
+                    </p><p>
+                    Mentoring fellow engineers is very rewarding for me and I constantly seek new ways to share knowledge. 
+                    As an Agile advocate, I focus on delivery and engage my client. 
+                    </p><p>
+                    Though Irish-born, I live in the beautiful city of Buenos Aires, Argentina with my wife, Romina. Working remotely is challenging, but being a strong communicator and a quick study are keys to my success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-anchor="process">
+        <div class="container">
+            <div class="row">
+                <div class="hidden-sm-down col-md-6">
+                    <p>This presentation defines an Agile process, it shortens the 12 principals of Agile down to 4 key goals and the pneumonic, SHARP.  
+                    </p><p>
+                    In practical terms, good development processes are more than Agile (shorten the cycle, adapt to change, reduce overhead and peer oriented).  
+                    </p><p>
+                    Often overlooked, it's important to have well defined build, source repository, versioning, build repository and deployment processes. Good documentation, healthy project-to-project dependencies and relationships.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <iframe id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" src="https://prezi.com/embed/k76-vj7tb3tz/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;landing_data=bHVZZmNaNDBIWnNjdEVENDRhZDFNZGNIUE43MHdLNWpsdFJLb2ZHanI0OUd0VGF0UldIUmZaUjRNMDR3Vmx6MElBPT0&amp;landing_sign=BkBbi7jQtelBHJ2644hgiJ1RmlQ7LA6NpgshkbBWsFM"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section data-anchor="tools" class="tools">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 col-md-2 offset-md-2 tool-img">
+                    <a href="https://vuejs.org/" data-toggle="modal" data-target="#vue-modal"><img src="logos/vue2.svg"/></a>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="row">
+                        <div class="col-6 col-md-4 tool-img">
+                            <a href="https://brigade.engineering/what-is-the-flux-application-architecture-b57ebca85b9e" data-toggle="modal" data-target="#flux-modal"><img src="logos/redux2.svg"/></a>
+                        </div>
+                        <div class="col-6 col-md-4 tool-img">
+                            <a href="https://webpack.js.org/" data-toggle="modal" data-target="#webpack-modal"><img src="logos/webpack2.svg"/></a>
+                        </div>
+                        <div class="hidden-sm-down col-md-4 tool-img">
+                            <a href="https://pugjs.org" data-toggle="modal" data-target="#pug-modal"><img src="logos/pug2.svg"/></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="hidden-sm-down col-md-4 tool-img">
+                            <a href="https://yarnpkg.com" data-toggle="modal" data-target="#yarn-modal"><img src="logos/yarn2.svg"/></a>
+                        </div>
+                        <div class="col-6 col-md-4 tool-img">
+                            <a href="http://getbootstrap.com/" data-toggle="modal" data-target="#getbootstrap-modal"><img src="logos/bootstrap2.svg"/></a>
+                        </div>
+                        <div class="col-6 col-md-4 tool-img">
+                            <a href="http://babeljs.io/" data-toggle="modal" data-target="#babel-modal"><img src="logos/babel2.svg"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-2">
+                    <h3>The Right Tool</h3>
+                </div>
+                <div class="col-6 col-md-2">
+                    <div class="row">
+                        <div class="col-6 tool-img">
+                            <a href="https://karma-runner.github.io/" data-toggle="modal" data-target="#karma-modal"><img src="logos/karma2.svg"/></a>
+                        </div>
+                        <div class="col-6 tool-img">
+                            <a href="https://istanbul.js.org/" data-toggle="modal" data-target="#istanbul-modal"><img src="logos/istanbul2.svg"/></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 tool-img">
+                            <a href="https://jasmine.github.io/" data-toggle="modal" data-target="#jasmine-modal"><img src="logos/jasmine2.svg"/></a>
+                        </div>
+                        <div class="col-6 tool-img">
+                            <a href="http://eslint.org/" data-toggle="modal" data-target="#eslint-modal"><img src="logos/eslint2.svg"/></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 tool-img">
+                    <a href="https://github.com/lukehoban/es6features" data-toggle="modal" data-target="#es6-modal"><img src="logos/javascript2.svg"/></a>
+                </div>
+                <div class="col-6 col-md-1">
+                    <div class="row">
+                        <div class="col-6 col-md-12 tool-img">
+                            <a href="https://nodejs.org/" data-toggle="modal" data-target="#node-modal"><img src="logos/nodejs2.svg"/></a>
+                        </div>
+                        <div class="col-6 hidden-md-up tool-img">
+                            <a href="https://expressjs.com/" data-toggle="modal" data-target="#express-modal"><img src="logos/express2.svg"/></a>
+                        </div>
+                    </div>
+                    <div class="row hidden-sm-down">
+                        <div class="col-12 tool-img">
+                            <a href="https://expressjs.com/" data-toggle="modal" data-target="#express-modal"><img src="logos/express2.svg"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="vue-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Vue.js</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Comparable to React and Angular, uses Virtual DOM, Reactive data, Directives
+                and a Component-based structure. It is at the cutting edge of JS frameworks
+                and has an impressive following (<a href="https://vuejs.org">https://vuejs.org</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="flux-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Flux Architecture</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Whether using Redux, Vuex or Facebook Flux, the pattern is the important part. One-way flow,
+                simple, clean and less error-prone, it encourages single source of truth (SSOT). (<a href="https://brigade.engineering/what-is-the-flux-application-architecture-b57ebca85b9e">What is the Flux Application Architecture?</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="webpack-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Webpack</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Well-designed Module Bundler with amazing features like the Dev Server and HMR. Its level
+                of configurability is really something and it has a vast community and ecosystem. Sourcemaps and
+                realtime compilation make transpiling far more practical. (<a href="https://webpack.js.org">https://webpack.js.org</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="pug-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pug Templates</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                HTML template syntax might be low on an engineer's list of priorities, but the increase in legibility
+                and decrease in verbosity of HTML templates when using Pug is too good not to have on this list. (<a href="https://pugjs.org">https://pugjs.org</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="yarn-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Yarn Package Manager</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                This answers all of the pain points of NPM, the lockfile in particular makes this
+                an important part of any Javascript stack. (<a href="https://yarnpkg.com">https://yarnpkg.com</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="getbootstrap-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Bootstrap</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Sensible UX framework will all the features and highly configurable, plus backed by a huge community (<a href="http://getbootstrap.com">http://getbootstrap.com</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="babel-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Babel</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ESNext today. The standard in Javascript transcompilation. (<a href="http://babeljs.io">http://babeljs.io</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="istanbul-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Istanbul Coverage</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Great tool for determining unit testing coverage for Javascript with excellent, browsable HTML reports. (<a href="https://istanbul.js.org">https://istanbul.js.org</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="karma-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Karma Test Runner</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                The glue between unit tests, browser, coverage tool, reporting and the build. Very large community and excellent integration with other tools. (<a href="https://karma-runner.github.io">https://karma-runner.github.io</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="jasmine-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Jasmine BDD Test Framework</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Behaviour-driven development, a test suite framework with expectations built-in geared towards BDD (TDD). (<a href="https://jasmine.github.io">https://jasmine.github.io</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="eslint-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ESLint</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Latest generation Linting tool with fully configurable rules, builds on it's predecessors, supports ES6. (<a href="http://eslint.org">http://eslint.org</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="es6-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ECMAScript 6 / ES2015 / ES6</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                676 features added to the Javascript language, a milestone change which greatly affects development. (<a href="https://github.com/lukehoban/es6features">https://github.com/lukehoban/es6features</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="node-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Node.js</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Javascript is the only universal web language (and most used language of GitHub), it makes a lot of sense to use it server-side. With Javascript standards progressing, the future looks very bright for Node.js. (<a href="https://nodejs.org">https://nodejs.org</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="express-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Express Web Framework</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Fast development of web services in Node.js (<a href="https://expressjs.com">https://expressjs.com</a>)
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </section>
+    <section data-anchor="triangle">
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-2">
+                        <h3><small>3 Sides of the</small><br/>Software Quality Triangle</h3>
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <p>Recently I have been discussing software quality processes significantly more than usual, debating what could be introduced to increase quality at the <b>greatest value</b>. What do I mean "value"? Well, I'm not a project manager, I do however have great respect for a neat process which is audited and monitored for efficiency.</p>
+                        <p>Most architects will likely evaluate "value" when it comes to a given software stack or technology, myself being a great advocate of lean development for quick time-to-market. But when assessing quality measures, I have to say in the past I've implemented quality processes often in spite of project management or in opposition to them. Some product or project managers may equate more process with lower productivity.</p>
+                        <p>So when I came across engineers <b>measuring</b> the effectiveness of process versus the cost, I was intrigued.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80%" viewBox="0 0 195 206" version="1.1"><defs></defs><g transform="translate(0.5,0.5)"><path d="M 21 7 L 71 97 L 21 187 Z" fill-opacity="0" stroke="#fff" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/><path d="M 68 -20 L 118 70 L 68 160 Z" fill-opacity="0" stroke="#fff" stroke-width="3" stroke-miterlimit="10" transform="translate(93,0)scale(-1,1)translate(-93,0)rotate(58,93,70)" pointer-events="none"/><path d="M 66 37 L 127 129.5 L 66 222 Z" fill-opacity="0" stroke="#fff" stroke-width="3" stroke-miterlimit="10" transform="rotate(-120,96.5,129.5)" pointer-events="none"/><g transform="translate(88.5,63.5)"><text x="15" y="12" fill="#fff" text-anchor="middle" font-size="14px" font-family="Oswald">Team</text></g><g transform="translate(82.5,110.5)"><text x="39" y="12" fill="#fff" text-anchor="middle" font-size="14px" font-family="Oswald">Requirements</text></g><g transform="translate(27.5,90.5)"><text x="13" y="12" fill="#fff" text-anchor="middle" font-size="14px" font-family="Oswald">Time</text></g></g></svg>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <p>Most people are familiar with the project management triangle. It is a fantastic way to demonstrate the scales of delivering a project, any 2 fixed sides can be achieved with the adjustment of the other.</p>
+                        <p>So for example if I have 5 team members and 10 manweeks of requirements, then I need 2 weeks to complete. Or if I have 30 manweeks of requirements and 10 weeks to deliver I will need 3 team members.</p>
+                        <p>All makes sense right? But where's software quality come in?</p>
+                        <p>Well, I'm going to take the same triangle and present it to you in software quality terms. This time the equation is slightly different, based on the ability for a project to deal with a problem side.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Team</h3>
+                        <p>The level of skill of your team is a quality measure, their time working together and familiarity with the project. New resources represent a drain on existing ones, the ability of a team should be seen as the average ability of it's members, each new resource with lower than existing skill, will inevitably bring down the existing quality of the team.</p>
+                        <h3>Time</h3>
+                        <p>Allocation of an engineers time is important, an engineer always fire-fighting will create much technical debt, rather than reducing it, they are more error prone and are likely to produce less maintainable code (a future cost to development). Equally, leaving behind processes like unit testing, code review and refactoring time will affect output quality.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Requirements</h3>
+                        <p>Just as scope affects the time scale of a project, requirement quality is directly related to software quality. Should requirements be vague or missing, resultant quality is low, for 2 reasons, 1 is that late or missing requirements often deemed "obvious" are not implemented and therefore perceived as a bug. Additionally, requirements not fully explored will often lead to software foundations built on sand, meaning that once a requirement has been fleshed out, suddenly a pillar of the architecture is false and the whole thing needs re-architecting. Often this results in the jenga pattern where a structure is changed gradually so many times without effort to re-evaluate the whole, that it becomes unstable.</p>
+                        <p>There isn't a precise formula for deciding on this, however here is my attempt at a mathematically expression:</p>
+                        <h3>(allocation %) * (team avg exp) * (req coverage) ~= 1 / (bug count) * (dev cost)</h3>
+                        <p>Obviously I don't imagine anyway would use this expression, the way I am using this triangle is that I will <b>suffer any 1 of the sides being weak as long as the other 2 are strong</b>. This way the triangle serves as a flexible mechanism to demonstrate the needs of the project from the technical lead's perspective.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section data-anchor="reqs">
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-2">
+                        <h3>Informal or Formal Requirements?</h3>
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <p>It's often called Requirements Gathering, as if it's just a matter of sweeping some facts into a big pile and calling it requirements. I'm an Agile advocate and have witnessed first hand the benefits of a light footprint, a documentation free approach to requirements. This allows more creativity to occur, a process which involves the entire team and it is much more adaptive to avoid failure.</p>
+                        <p>So why would anyone ever write requirements when this process seems to be perfect? Well first, Agile represents adaptability, it doesn't mean don't do any preparation. Most modern software development companies have the ability to prepare up front certain aspects of the forthcoming development. What benefit does this give? Firstly, it forces product owners to explore some basics of the project, a week of their work up front could avoid 10 weeks of the entire team later on. The Agile process is often used to push the decision process too late, this means the overall cost of development is much, much higher.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-md-2">
+                        <img src="reqs.svg"/>
+                    </div>
+                    <div class="col-8 col-md-8">
+                        <p>So assuming that some requirement analysis up front is beneficial and doesn't remove the adaptability of Agile, the next question, is how to communicate to a product owner what is needed from them? Often non-engineers don't understand some of the benefits of a high quality, formal requirement document.</p>
+                        <p>This is a problem I've encountered again recently, it's happened to me several times, which is why I've written this article.</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="slide">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p>SMART is a common acronym for requirements, you can google “smart requirements” and you’ll find plenty of discussion regarding its meaning and how to apply it. Here is my explanation:</p>
+                        <ul>
+                            <li><b>(S)pecific</b> means not vague, it is clear and unambiguous.</li>
+                            <li><b>(M)easurable</b> means we can determine if it was met or not, it's testable.</li>
+                            <li><b>(A)ctionable</b> means it's possible and there is a course of action to complete it.</li>
+                            <li><b>(R)elevant</b> means it's not a pointless statement, it has some meaning to the project.</li>
+                            <li><b>(T)imely</b> means it can be achieved in the timeframe of the project.</li>
+                        </ul>
+                        <p>Other important considerations, Requirements should be...</p>
+                        <ul>                        
+                            <li><b>Referenceable</b>. by giving each one a unique reference, anyone can clearly communicate anything relating to it.</li>
+                            <li><b>Unique</b>. Any duplication of requirements will generally lead to deviation of content, this makes the document inconsistent and flawed. Also, duplication serves as additional content, that shouldn't be necessary to track by either the author or the reader.</li>
+                            <li><b>Atomic</b>. This is similar to (S)pecific, if a requirement isn't a single concrete fact, but rather an entire paragraph containing possibly 5 distinct requirements, this makes the reference less useful. Telling a developer to implement requirement 345A now means to implement 5 possibly unrelated requirements, so now there needs to be an explanation of the aspect of 345A that are to be achieved. The same problem occurs when passing this information to a tester.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+    <section data-anchor="mentoring">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-2">
+                        <h3>What Mentoring Means</h3>
+                    </div>
+                    <div class="col-12 col-md-10">
+                        <ol type="a">
+                            <li>don't give a fish, teach to fish.</li>
+                            <li>don't be a bottleneck!</li>
+                            <li>async, not down the sink! teach with reusable content (wiki)</li>
+                            <li>principals and patterns, not one-time fixes</li>
+                        </ol>
+                        <p>All too often, the experienced engineer can be seen typing on a team member's workstation at a frantic speed to solve an issue their peer has found.</p>
+                        <p>Why does this happen? The time it takes to educate a peer is significantly longer than resolving the problem. And sometimes the lack of prepared documentation, guidelines or principals means that the only source of this information is from a technical lead.</p>
+                        <p>What is the outcome of this process? Firstly the senior engineer ends up losing significant time, becoming a bottleneck. Instead of a peer improving during this process they tend to learn 2 things, that they are incapable and also that anytime they need a "fish" they can ask all too easily to get it.</p>
+                        <p>Technical leads need to repeatedly instill principals, when told the source of an issue cannot be found, they need to remind peers that they need to use process of elimination to effectively find the source of an issue.</p>
+                        <p>Learning by watching and learning by doing have two very different rates of attrition.</p>
+                    </div>
+                </div>
+            </div>            
+    </section>
+
+</div>
+
+</body>
+
+</html>

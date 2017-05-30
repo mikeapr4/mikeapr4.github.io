@@ -1,0 +1,194 @@
+body {
+	transition: opacity 0.3s ease;
+	opacity: 0;
+	font-family: 'Open Sans';
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+	padding-right: 0 !important; /* https://stackoverflow.com/questions/32862394/bootstrap-modals-keep-adding-padding-right-to-body-after-closed */
+}
+body.loaded {
+	opacity: 1;
+}
+h1, h2, h3, h4 {
+	font-family: 'Oswald';
+}
+h3 small {
+	font-size: 100%;
+	opacity: 0.5;
+}
+img.rounded-circle {
+	width: 100%;
+	padding: 5px;
+}
+
+section .container, section .container-fluid {
+	margin-top: 70px; /* allow some space for navbar */
+}
+
+.navbar {
+	background-color: rgba(0, 164, 188, 0);
+	min-height: 50px; /* for hamburger */
+}
+.navbar .navbar-brand {
+	opacity: 0;
+}
+.navbar-inverse .navbar-nav .nav-link {
+	transition: all 0.3s ease;
+	margin: 0px 10px;
+	border-radius: 5px;
+}
+.navbar-inverse .navbar-nav .nav-link,
+.navbar-inverse .navbar-nav .nav-link:focus,
+.navbar-inverse .navbar-toggler
+ {
+	color: #fff;
+}
+.navbar-inverse .navbar-toggler {
+	border: none;
+}
+/* Not-Mobile */
+@media (min-width: 768px) {	
+
+	.navbar-inverse .navbar-nav .nav-link:hover, 
+	.navbar-inverse .navbar-nav .dropdown.show .nav-link { /* hover and open nav-link dropdown have same style */
+		color: #00a4bc;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+}
+.navbar-nav .nav-item .dropdown-menu {
+	width: 400px;
+}
+.dropdown-menu {
+	border: none;
+	border-radius: 10px;
+}
+.dropdown-menu li {
+	margin: 0px 8px;
+}
+.dropdown-menu li a {
+	transition: all 0.3s ease;
+	color: #00a4bc;
+	border-radius: 10px;
+	padding: 4px
+}
+.dropdown-menu li a:hover {
+	text-decoration: none;
+}
+.dropdown-menu li a:after {
+	transition: all 0.3s ease;
+	content: '\f0a1'; /* http://fontawesome.io/icon/bullhorn/ */
+	font-family: 'FontAwesome';
+	font-size: 12px;
+	line-height: 16px;
+	text-align: center;
+	margin-left: 8px;
+	opacity: 0;	
+}
+.dropdown-menu li a:hover:after {
+	opacity: 1;
+}
+
+#logo {
+	width: 120px;
+}
+#display-logo {
+	width: 100%;
+}
+
+iframe {
+	width: 550px;
+	height: 400px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+	.display-3 { font-size: 32px; }
+	p, li { font-size: 80%; }
+
+	.navbar-collapse { 
+		background-color: #00a4bc; 
+		margin: 0px -20px;
+		padding: 10px;
+		margin-top: 50px; /* not to overlap hamburger icon */
+	}
+	.dropdown-menu {
+		background: transparent;
+	}
+	.dropdown-menu li a {
+		color: #fff;
+	}
+
+	iframe {
+		width: 495px;
+		height: 360px;
+	}
+
+	.fp-controlArrow.fp-prev {
+		border-width: 19px 17px 19px 0;
+	}
+	.fp-controlArrow.fp-next {
+		border-width: 19px 0 19px 17px;
+	}
+}
+
+.tools .row > div > .row {
+	margin-bottom: 30px;
+}
+/*
+burgundy: #800020
+bg-light: #bb002f
+lighter : #e20039
+
+*/
+.tools .tool-img img {
+	background-color: #bb002f;
+	padding: 10px;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.tools h3 {
+	padding-bottom: 20px;
+}
+
+.tool-img a:focus {
+	outline: none;
+}
+
+.modal .modal-content {
+	background: transparent;
+	border: none;
+}
+
+.modal-backdrop {
+	opacity: .7;
+}
+
+.modal-header button, .modal-header button:hover {
+	color: #fff;
+	opacity: 1;
+}
+
+.modal-body a, .modal-body a:visited, .modal-body a:focus, .modal-body a:hover {
+	color: #bbb;
+}
+
+/* https://www.flickr.com/photos/mikelpierre/15356650745/ */
+.full-screen-bg {
+	background: url('mountains2.jpg') center bottom no-repeat fixed;
+	background-size: cover;
+	height: 100%; 
+	min-height: 100%;
+	color: #fff
+}
+.full-screen-bg:before {
+	position: absolute;
+	content:"";
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: #00a4bc;
+	opacity: 0.5;
+}
