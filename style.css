@@ -98,7 +98,10 @@ section .container, section .container-fluid {
 }
 
 iframe {
-	width: 550px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	height: 400px;
 }
 
@@ -121,8 +124,7 @@ iframe {
 	}
 
 	iframe {
-		width: 307px;
-		height: 225px;
+		top: -200px;
 	}
 
 	.fp-controlArrow.fp-prev {
