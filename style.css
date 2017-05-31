@@ -43,8 +43,9 @@ section .container, section .container-fluid {
  {
 	color: #fff;
 }
-.navbar-inverse .navbar-toggler {
+.navbar-inverse .navbar-toggler, .navbar-inverse .navbar-toggler:focus, .navbar-inverse .navbar-toggler:visited {
 	border: none;
+	outline: none;
 }
 /* Not-Mobile */
 @media (min-width: 768px) {	
